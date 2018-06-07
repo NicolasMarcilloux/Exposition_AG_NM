@@ -3,8 +3,8 @@
         {
             "config": {
                 "position": [
-                    1017,
-                    7
+                    686,
+                    33
                 ]
             },
             "name": "New Model Object",
@@ -256,8 +256,8 @@
         {
             "config": {
                 "position": [
-                    1012,
-                    225
+                    72,
+                    114
                 ]
             },
             "name": "New Model Object",
@@ -268,7 +268,9 @@
                     "_default2_new_create": false,
                     "_default3_edit_update": false,
                     "_default4_delete": false,
-                    "customActions": []
+                    "customActions": [
+                        "search"
+                    ]
                 },
                 "name": "Artiste",
                 "objectsettings": {
@@ -439,8 +441,8 @@
         {
             "config": {
                 "position": [
-                    361,
-                    218
+                    354,
+                    318
                 ]
             },
             "name": "New Model Object",
@@ -546,8 +548,8 @@
         },
         "extensionKey": "exposition_ag_nm",
         "name": "exposition_AG_NM",
-        "originalExtensionKey": "",
-        "originalVendorName": "",
+        "originalExtensionKey": "exposition_ag_nm",
+        "originalVendorName": "AGNM",
         "persons": [
             {
                 "company": "",
@@ -562,7 +564,17 @@
                 "role": "Developer"
             }
         ],
-        "plugins": [],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Artiste => list,show,search\nOeuvre => list,show,highlight\nExposition => list,show",
+                    "noncacheableActions": "Artiste => search",
+                    "switchableActions": "Agenda expositions\nExposition->list; Exposition->show;\nGalerie\nOeuvre->list; Oeuvre->show;\nMise en valeur\nOeuvre->highlight;\nListe des artistes\nArtiste->list; Artiste->show; Artiste->search;\n"
+                },
+                "key": "agnm1",
+                "name": "Expo AGNM"
+            }
+        ],
         "vendorName": "AGNM"
     },
     "wires": [
@@ -616,7 +628,7 @@
         }
     ],
     "log": {
-        "last_modified": "2018-06-07 12:14",
+        "last_modified": "2018-06-07 03:17",
         "extension_builder_version": "7.6.18",
         "be_user": " (1)"
     }

@@ -1,0 +1,44 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-exposition-ag-nm" >
+	<tr>
+		<td>
+			<f:translate key="tx_expositionagnm_domain_model_oeuvre.intitule" />
+		</td>
+		<td>
+		{oeuvre.intitule}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_expositionagnm_domain_model_oeuvre.date" />
+		</td>
+		<td>
+		{oeuvre.date -> f:format.date()}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_expositionagnm_domain_model_oeuvre.description" />
+		</td>
+		<td>
+		{oeuvre.description}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_expositionagnm_domain_model_oeuvre.type" />
+		</td>
+		<td>
+		{oeuvre.type}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_expositionagnm_domain_model_oeuvre.dimentions" />
+		</td>
+		<td>
+		{oeuvre.dimentions}
+		</td>
+	</tr>
+</table>
+</html>
