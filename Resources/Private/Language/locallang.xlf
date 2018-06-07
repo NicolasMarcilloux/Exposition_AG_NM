@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-06-07T12:14:23Z" product-name="exposition_ag_nm">
+		<header/>
+		<body>
+			<trans-unit id="tx_expositionagnm_domain_model_exposition">
+				<source>Exposition</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_exposition.nom">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_exposition.horaires">
+				<source>Horaires</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_exposition.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_exposition.visuel">
+				<source>Visuel</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_exposition.tarif">
+				<source>Tarif</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_exposition.date_debut">
+				<source>Date Debut</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_exposition.date_fin">
+				<source>Date Fin</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_exposition.lieu">
+				<source>Lieu</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_exposition.oeuvres">
+				<source>Oeuvres</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_lieu">
+				<source>Lieu</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_lieu.nom">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_lieu.latitude">
+				<source>Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_lieu.longitude">
+				<source>Longitude</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_lieu.adresse">
+				<source>Adresse</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_lieu.code_postal">
+				<source>Code Postal</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_lieu.ville">
+				<source>Ville</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_lieu.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_lieu.accessible_p_m_r">
+				<source>Accessible P M R</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_artiste">
+				<source>Artiste</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_artiste.photo">
+				<source>Photo</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_artiste.nom">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_artiste.biographie">
+				<source>Biographie</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_artiste.date_naissance">
+				<source>Date Naissance</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_artiste.date_deces">
+				<source>Date Deces</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_artiste.influences">
+				<source>Influences</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_artiste.oeuvres">
+				<source>Oeuvres</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_artiste.nationalite">
+				<source>Nationalite</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_nationalite">
+				<source>Nationalite</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_nationalite.nom">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_nationalite.code_i_s_o">
+				<source>Code I S O</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_oeuvre">
+				<source>Oeuvre</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_oeuvre.intitule">
+				<source>Intitule</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_oeuvre.date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_oeuvre.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_oeuvre.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_expositionagnm_domain_model_oeuvre.dimentions">
+				<source>Dimentions</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

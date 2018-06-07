@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-06-07T12:14:23Z" product-name="exposition_ag_nm">
+		<header/>
+		<body>
+			<trans-unit id="intitule.description">
+				<source>intitulé</source>
+			</trans-unit>
+			<trans-unit id="date.description">
+				<source>date</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="type.description">
+				<source>type</source>
+			</trans-unit>
+			<trans-unit id="dimentions.description">
+				<source>dimentions</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

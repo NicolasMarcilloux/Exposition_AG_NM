@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-06-07T12:14:23Z" product-name="exposition_ag_nm">
+		<header/>
+		<body>
+			<trans-unit id="nom.description">
+				<source>nom</source>
+			</trans-unit>
+			<trans-unit id="latitude.description">
+				<source>latitude</source>
+			</trans-unit>
+			<trans-unit id="longitude.description">
+				<source>longitude</source>
+			</trans-unit>
+			<trans-unit id="adresse.description">
+				<source>adresse</source>
+			</trans-unit>
+			<trans-unit id="code_postal.description">
+				<source>codePostal</source>
+			</trans-unit>
+			<trans-unit id="ville.description">
+				<source>ville</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="accessible_p_m_r.description">
+				<source>acessible PMR</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

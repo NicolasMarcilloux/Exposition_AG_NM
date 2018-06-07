@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-06-07T12:14:23Z" product-name="exposition_ag_nm">
+		<header/>
+		<body>
+			<trans-unit id="nom.description">
+				<source>nom</source>
+			</trans-unit>
+			<trans-unit id="horaires.description">
+				<source>horaires</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="visuel.description">
+				<source>visuel</source>
+			</trans-unit>
+			<trans-unit id="tarif.description">
+				<source>tarif</source>
+			</trans-unit>
+			<trans-unit id="date_debut.description">
+				<source>dateDebut</source>
+			</trans-unit>
+			<trans-unit id="date_fin.description">
+				<source>dateFin</source>
+			</trans-unit>
+			<trans-unit id="lieu.description">
+				<source>le lieu</source>
+			</trans-unit>
+			<trans-unit id="oeuvres.description">
+				<source>les oeuvres</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

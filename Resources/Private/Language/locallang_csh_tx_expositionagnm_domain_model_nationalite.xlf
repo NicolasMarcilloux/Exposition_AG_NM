@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-06-07T12:14:23Z" product-name="exposition_ag_nm">
+		<header/>
+		<body>
+			<trans-unit id="nom.description">
+				<source>nom</source>
+			</trans-unit>
+			<trans-unit id="code_i_s_o.description">
+				<source>code iso</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

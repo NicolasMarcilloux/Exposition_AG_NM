@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-06-07T12:14:23Z" product-name="exposition_ag_nm">
+		<header/>
+		<body>
+			<trans-unit id="photo.description">
+				<source>photo</source>
+			</trans-unit>
+			<trans-unit id="nom.description">
+				<source>nom</source>
+			</trans-unit>
+			<trans-unit id="biographie.description">
+				<source>biographie</source>
+			</trans-unit>
+			<trans-unit id="date_naissance.description">
+				<source>date de  naissance</source>
+			</trans-unit>
+			<trans-unit id="date_deces.description">
+				<source>date de décès</source>
+			</trans-unit>
+			<trans-unit id="influences.description">
+				<source>influences</source>
+			</trans-unit>
+			<trans-unit id="oeuvres.description">
+				<source>oeuvres</source>
+			</trans-unit>
+			<trans-unit id="nationalite.description">
+				<source>nationalité</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
