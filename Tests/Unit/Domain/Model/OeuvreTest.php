@@ -147,4 +147,32 @@ class OeuvreTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
         );
 
     }
+
+    /**
+     * @test
+     */
+    public function getPhotoReturnsInitialValueForFileReference()
+    {
+        self::assertEquals(
+            null,
+            $this->subject->getPhoto()
+        );
+
+    }
+
+    /**
+     * @test
+     */
+    public function setPhotoForFileReferenceSetsPhoto()
+    {
+        $fileReferenceFixture = new \TYPO3\CMS\Extbase\Domain\Model\FileReference();
+        $this->subject->setPhoto($fileReferenceFixture);
+
+        self::assertAttributeEquals(
+            $fileReferenceFixture,
+            'photo',
+            $this->subject
+        );
+
+    }
 }

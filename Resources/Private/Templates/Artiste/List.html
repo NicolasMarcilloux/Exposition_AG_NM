@@ -1,6 +1,4 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<link rel="stylesheet" type="text/css" href="./../style.css" />
-
 <f:layout name="Default" />
 
 This Template is responsible for creating a table of domain objects.
@@ -19,55 +17,26 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 <f:flashMessages />
 
-<style>
-	
-</style>
 
-<table class="table" >
-	<tr>
-		<th><f:translate key="tx_expositionagnm_domain_model_artiste.photo" /></th>
-		<th><f:translate key="tx_expositionagnm_domain_model_artiste.nom" /></th>
-		<th><f:translate key="tx_expositionagnm_domain_model_artiste.biographie" /></th>
-		<th><f:translate key="tx_expositionagnm_domain_model_artiste.date_naissance" /></th>
-		<th><f:translate key="tx_expositionagnm_domain_model_artiste.date_deces" /></th>
-		<th><f:translate key="tx_expositionagnm_domain_model_artiste.influences" /></th>
-		<th> </th>
-		<th> </th>
-	</tr>
+		<f:widget.paginate objects="{artistes}" as="paginatedArtistes"
+						   configuration="{itemsPerPage: 8, insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 10}">
+			<div class="artist-list">
+				<f:for each="{paginatedArtistes}" as="artiste">
+					<div class="artist">
+						<f:image  src="{artiste.photo.originalResource.publicUrl}" />
 
-	<f:for each="{artistes}" as="artiste">
-		<tr>
-			<td><f:link.action action="show" arguments="{artiste : artiste}"> <f:image style="max-width:300px;max-height:300px;" src="{artiste.photo.originalResource.publicUrl}" /></f:link.action></td>
-			<td><f:link.action action="show" arguments="{artiste : artiste}"> {artiste.nom}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{artiste : artiste}"> {artiste.biographie}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{artiste : artiste}"> {artiste.dateNaissance -> f:format.date()}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{artiste : artiste}"> {artiste.dateDeces -> f:format.date()}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{artiste : artiste}"> {artiste.influences}</f:link.action></td>
-			<td><f:link.action action="edit" arguments="{artiste : artiste}" class="btn btn-warning">Edit</f:link.action></td>
-			<td><f:link.action action="delete" arguments="{artiste : artiste}" class="btn btn-danger">Delete</f:link.action></td>
-		</tr>
-	</f:for>
-</table>
-
-
-
-<div class="artist-list">
-	<f:for each="{artistes}" as="artiste">
-			<f:link.action action="show" arguments="{artiste : artiste}"> 
-				<f:image style="width:150px;height:200px;" src="{artiste.photo.originalResource.publicUrl}" />
-			</f:link.action>
-
-			<div class="txt">
-				<p>{artiste.nom}</p>
-				<p>Détails</p>
+						<div class="lien">
+							<p>{artiste.nom}</p>
+							<f:link.action class="btn btn-primary" action="show" arguments="{artiste : artiste}">
+								<p class="details">En savoir +</p>
+							</f:link.action>
+						</div>
+					</div>
+				</f:for>
 			</div>
+		</f:widget.paginate>
 
-			<f:for each="{artiste.oeuvres}" as="oeuvre">
-				<p>{oeuvre.intitule}</p>
-			</f:for>
-	</f:for>
-</div>
 
-<f:link.action class="btn btn-primary" action="new">New Artiste</f:link.action>
+	<!--<f:link.action class="btn btn-primary" action="new">New Artiste</f:link.action>-->
 </f:section>
 </html>

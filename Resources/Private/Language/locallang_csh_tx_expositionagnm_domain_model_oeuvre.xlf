@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2018-06-07T15:17:32Z" product-name="exposition_ag_nm">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-07-05T14:21:37Z" product-name="exposition_ag_nm">
 		<header/>
 		<body>
 			<trans-unit id="tx_exposition_ag_nm_domain_model_agnm1">
@@ -23,6 +23,9 @@
 			</trans-unit>
 			<trans-unit id="dimentions.description">
 				<source>dimentions</source>
+			</trans-unit>
+			<trans-unit id="photo.description">
+				<source>photo</source>
 			</trans-unit>
 		</body>
 	</file>

@@ -56,6 +56,14 @@ class Oeuvre extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $dimentions = '';
 
     /**
+     * photo
+     * 
+     * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
+     * @cascade remove
+     */
+    protected $photo = null;
+
+    /**
      * Returns the intitule
      * 
      * @return string $intitule
@@ -158,5 +166,26 @@ class Oeuvre extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setDimentions($dimentions)
     {
         $this->dimentions = $dimentions;
+    }
+
+    /**
+     * Returns the photo
+     * 
+     * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $photo
+     */
+    public function getPhoto()
+    {
+        return $this->photo;
+    }
+
+    /**
+     * Sets the photo
+     * 
+     * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $photo
+     * @return void
+     */
+    public function setPhoto(\TYPO3\CMS\Extbase\Domain\Model\FileReference $photo)
+    {
+        $this->photo = $photo;
     }
 }

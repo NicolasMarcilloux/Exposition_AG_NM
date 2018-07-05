@@ -1,14 +1,142 @@
+/* General */
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* fin general */
+
+/* Liste Artistes */
+
 .artist-list {
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 .artist-list img {
+    width:200px;
+    height:250px;
+}
+
+.artist {
     margin-right: 20px;
 }
 
-.artist-list img {
-    margin-right: 20px;
+.artist:hover .lien {
+    height: 250px;
+    transition: height 0.25s ease-in;
 }
+
+.artist-list .artist {
+    position: relative;
+}
+
+.lien {
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(235, 235, 235, 0.8);
+    width: 200px;
+    height: 0;
+    transition: height 0.25s ease-out;
+    color: #000;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+.lien .btn-primary {
+    background-color: #ff8700;
+    margin-top: 0 !important;
+    width: 66%;
+}
+
+.lien .btn-primary:hover {
+    background-color: #cc6c00;
+}
+
+.lien .btn-primary .details {
+    margin-bottom: 0;
+}
+
+.section-default,
+.frame-type-list{
+    padding-top: 0;
+}
+
+.tx-exposition-ag-nm .btn-primary {
+    margin-top: 25px;
+}
+
+.f3-widget-paginator {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.f3-widget-paginator li {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.f3-widget-paginator li a {
+    color: #000;
+}
+
+.f3-widget-paginator li:hover a {
+    color: #ff8700;
+}
+
+.f3-widget-paginator li.current {
+    color: #ff8700;
+}
+/* fin liste artistes */
+
+/* Detail artiste */
+.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info img {
+    width: 350px;
+    height: 400px;
+    margin-right: 35px;
+}
+
+.info .txt p {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.label {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+    width: 187px;
+    padding:0;
+    text-align: left;
+}
+
+.contenu {
+    text-align: left;
+    width: 250px;
+}
+
+.bio p {
+    text-align: justify;
+}
+/* fin detail artiste */

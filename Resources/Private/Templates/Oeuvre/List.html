@@ -24,6 +24,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 		<th><f:translate key="tx_expositionagnm_domain_model_oeuvre.description" /></th>
 		<th><f:translate key="tx_expositionagnm_domain_model_oeuvre.type" /></th>
 		<th><f:translate key="tx_expositionagnm_domain_model_oeuvre.dimentions" /></th>
+		<th><f:translate key="tx_expositionagnm_domain_model_oeuvre.photo" /></th>
 		<th> </th>
 		<th> </th>
 	</tr>
@@ -35,6 +36,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 			<td><f:link.action action="show" arguments="{oeuvre : oeuvre}"> {oeuvre.description}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{oeuvre : oeuvre}"> {oeuvre.type}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{oeuvre : oeuvre}"> {oeuvre.dimentions}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{oeuvre : oeuvre}"> {oeuvre.photo.originalResource.name}</f:link.action></td>
 			<td><f:link.action action="edit" arguments="{oeuvre : oeuvre}">Edit</f:link.action></td>
 			<td><f:link.action action="delete" arguments="{oeuvre : oeuvre}">Delete</f:link.action></td>
 		</tr>
