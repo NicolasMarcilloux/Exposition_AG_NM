@@ -1,0 +1,14 @@
+.artist-list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.artist-list img {
+    margin-right: 20px;
+}
+
+.artist-list img {
+    margin-right: 20px;
+}

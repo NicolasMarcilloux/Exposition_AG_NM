@@ -52,3 +52,6 @@ plugin.tx_expositionagnm._CSS_DEFAULT_STYLE (
         color:green;
     }
 )
+
+page.includeCSS.exposition_ag_nm = EXT:exposition_ag_nm/Resources/Public/css/style.css
+plugin.tx_expositionagnm_agnm1.persistence.storagePid >

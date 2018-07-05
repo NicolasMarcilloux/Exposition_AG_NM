@@ -17,6 +17,12 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 <f:flashMessages />
 <f:render partial="Artiste/Properties" arguments="{artiste:artiste}" />
+
+<h3>Oeuvres</h3>
+<f:for each="{artiste.oeuvres}" as="oeuvre">
+    <p>{oeuvre.intitule}</p>
+</f:for>
+
 <f:link.action action="list">Back to list</f:link.action><br />
 <f:link.action action="new">New Artiste</f:link.action>
 </f:section>
