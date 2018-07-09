@@ -37,7 +37,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
     <h3>Oeuvres</h3>
 
     <f:widget.paginate objects="{artiste.oeuvres}" as="paginatedOeuvres"
-                       configuration="{itemsPerPage: 8, insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 10}">
+                       configuration="{itemsPerPage: 4, insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 10}">
       <div class="artist-list">
         <f:for each="{paginatedOeuvres}" as="oeuvre">
           <div class="artist">
@@ -45,7 +45,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
             <div class="lien">
               <p>{oeuvre.Intitule}</p>
-              <f:link.action class="btn btn-primary" action="show" arguments="{oeuvre : oeuvre}">
+              <f:link.action class="btn btn-primary" action="show" arguments="{oeuvre : oeuvre}" controller="Oeuvre">
                 <p class="details">En savoir +</p>
               </f:link.action>
             </div>

@@ -19,6 +19,14 @@ namespace AGNM\ExpositionAgNm\Controller;
 class OeuvreController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
     /**
+     * oeuvreRepository
+     *
+     * @var \AGNM\ExpositionAgNm\Domain\Repository\OeuvresRepository
+     * @inject
+     */
+    protected $oeuvreRepository = null;
+
+    /**
      * action list
      * 
      * @return void
@@ -47,6 +55,7 @@ class OeuvreController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
      */
     public function highlightAction()
     {
-
+        $oeuvres = $this->oeuvreRepository->findAll();
+        $this->view->assign('oeuvres', $oeuvres);
     }
 }

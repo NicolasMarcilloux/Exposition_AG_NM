@@ -13,11 +13,46 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Single View for Exposition</h1>
 
 <f:flashMessages />
-<f:render partial="Exposition/Properties" arguments="{exposition:exposition}" />
+  <h1>{exposition.nom}</h1>
+
+  <f:flashMessages />
+  <div class="info">
+    <f:image  src="{exposition.visuel.originalResource.publicUrl}" />
+
+    <div class="txt">
+      <p><span class="label">Nom : </span> <span class="contenu">{exposition.nom}</span></p>
+      <p><span class="label">Horaires : </span> <span class="contenu">{exposition.horaires}</span></p>
+      <p><span class="label">Description :</span> <span class="contenu">{exposition.description}</span></p>
+      <p><span class="label">Tarif :</span> <span class="contenu">{exposition.tarif}</span></p>
+      <p><span class="label">Date de début :</span> <span class="contenu">{exposition.dateDebut -> f:format.date()}</span></p>
+      <p><span class="label">Date de fin :</span> <span class="contenu">{exposition.dateFin -> f:format.date()}</span></p>
+    </div>
+  </div>
+
+  <div class="oeuvres">
+    <h3>Oeuvres</h3>
+
+    <f:widget.paginate objects="{exposition.oeuvres}" as="paginatedOeuvres"
+                       configuration="{itemsPerPage: 4, insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 10}">
+      <div class="artist-list">
+        <f:for each="{paginatedOeuvres}" as="oeuvre">
+          <div class="artist">
+            <f:image  src="{oeuvre.photo.originalResource.publicUrl}" />
+
+            <div class="lien">
+              <p>{oeuvre.Intitule}</p>
+              <f:link.action class="btn btn-primary" action="show" arguments="{oeuvre : oeuvre}" controller="Oeuvre">
+                <p class="details">En savoir +</p>
+              </f:link.action>
+            </div>
+          </div>
+        </f:for>
+      </div>
+    </f:widget.paginate>
+
+  </div>
 <f:link.action action="list">Back to list</f:link.action><br />
-<f:link.action action="new">New Exposition</f:link.action>
 </f:section>
 </html>

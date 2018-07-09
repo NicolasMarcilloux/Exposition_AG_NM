@@ -17,34 +17,23 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 <f:flashMessages />
 
-<table  class="tx_expositionagnm" >
-	<tr>
-		<th><f:translate key="tx_expositionagnm_domain_model_exposition.nom" /></th>
-		<th><f:translate key="tx_expositionagnm_domain_model_exposition.horaires" /></th>
-		<th><f:translate key="tx_expositionagnm_domain_model_exposition.description" /></th>
-		<th><f:translate key="tx_expositionagnm_domain_model_exposition.visuel" /></th>
-		<th><f:translate key="tx_expositionagnm_domain_model_exposition.tarif" /></th>
-		<th><f:translate key="tx_expositionagnm_domain_model_exposition.date_debut" /></th>
-		<th><f:translate key="tx_expositionagnm_domain_model_exposition.date_fin" /></th>
-		<th> </th>
-		<th> </th>
-	</tr>
+	<f:widget.paginate objects="{expositions}" as="paginatedExpositions"
+					   configuration="{itemsPerPage: 8, insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 10}">
+		<div class="artist-list">
+			<f:for each="{paginatedExpositions}" as="exposition">
+				<div class="artist">
+					<f:image  src="{exposition.visuel.originalResource.publicUrl}" />
 
-	<f:for each="{expositions}" as="exposition">
-		<tr>
-			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.nom}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.horaires}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.description}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.visuel.originalResource.name}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.tarif}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.dateDebut -> f:format.date()}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{exposition : exposition}"> {exposition.dateFin -> f:format.date()}</f:link.action></td>
-			<td><f:link.action action="edit" arguments="{exposition : exposition}">Edit</f:link.action></td>
-			<td><f:link.action action="delete" arguments="{exposition : exposition}">Delete</f:link.action></td>
-		</tr>
-	</f:for>
-</table>
+					<div class="lien">
+						<p>{exposition.nom}</p>
+						<f:link.action class="btn btn-primary" action="show" arguments="{exposition : exposition}">
+							<p class="details">En savoir +</p>
+						</f:link.action>
+					</div>
+				</div>
+			</f:for>
+		</div>
+	</f:widget.paginate>
 
-<f:link.action action="new">New Exposition</f:link.action>
 </f:section>
 </html>
