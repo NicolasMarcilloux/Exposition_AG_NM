@@ -45,7 +45,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
             <div class="lien">
               <p>{oeuvre.Intitule}</p>
-              <f:link.action class="btn btn-primary" action="show" arguments="{oeuvre : oeuvre}" controller="Oeuvre">
+              <f:link.action class="btn btn-primary" action="show" arguments="{oeuvre : oeuvre}" controller="Oeuvres" pageUid="{settings.detailPid}">
                 <p class="details">En savoir +</p>
               </f:link.action>
             </div>

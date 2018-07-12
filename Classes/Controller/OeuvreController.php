@@ -19,7 +19,7 @@ namespace AGNM\ExpositionAgNm\Controller;
 class OeuvreController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
     /**
-     * oeuvreRepository
+     * OeuvresRepository
      *
      * @var \AGNM\ExpositionAgNm\Domain\Repository\OeuvresRepository
      * @inject

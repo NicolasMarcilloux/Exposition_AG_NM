@@ -16,9 +16,6 @@ namespace AGNM\ExpositionAgNm\Domain\Repository;
 /**
  * The repository for Oeuvres
  */
-
-
 class OeuvresRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
-
-}
+    }
